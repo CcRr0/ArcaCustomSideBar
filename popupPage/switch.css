@@ -1,0 +1,49 @@
+.switch {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.switch_label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 29px;
+  height: 14px;
+  background: #fff;
+  border: 1px solid #daa;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.switch_label:hover {
+  background: #efefef;
+}
+
+.onf_btn {
+  position: absolute;
+  top: 2px;
+  left: 1.5px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #daa;
+  transition: 0.2s;
+}
+
+.switch:checked+.switch_label {
+  background: #c44;
+  border: 1px solid #c44;
+}
+
+.switch:checked+.switch_label:hover {
+  background: #e55;
+}
+
+.switch:checked+.switch_label .onf_btn {
+  left: 17px;
+  background: #fff;
+  box-shadow: 0.5px 1px 1.5px #00000020;
+}

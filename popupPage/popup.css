@@ -1,0 +1,27 @@
+.container {
+	width: 250px;
+}
+
+.divContainer {
+    width: 250px; height: 25px; display: flex; align-items: center;
+}
+
+.divContainerL {
+    height: 25px; display: flex; align-items: center;
+}
+
+.handle, .deleteBtn {
+	cursor: pointer; width: 25px; height: 25px;
+}
+
+.legend {
+	font-size: 14px;
+}
+
+.sideBarSettings {
+	font-size: 14px;
+}
+
+.inform {
+	font-size: 4px; color: red;
+}

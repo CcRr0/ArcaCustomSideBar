@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/scripts/jquery-ui-1.13.1/jquery-ui.css" />
+        <link rel="stylesheet" href="/scripts/jquery-ui-1.13.1/jquery-ui.structure.css" />
+        <link rel="stylesheet" href="/scripts/jquery-ui-1.13.1/jquery-ui.theme.css" />
+        <script src="/scripts/jquery-3.6.0.js"></script>
+        <script src="/scripts/jquery-ui-1.13.1/jquery-ui.js"></script>
+
+        <link rel="stylesheet" href="popup.css" />
+        <link rel="stylesheet" href="switch.css" />
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend class="legend">
+                <div class="divContainerL">
+                    <label>사이드바 채널 설정ㅤ</label>
+                    <input type="checkbox" id="activateScriptSwitch" class="switch">
+                    <label for="activateScriptSwitch" class="switch_label">
+                        <span class="onf_btn"></span>
+                    </label>
+                </div>
+            </legend>
+
+            <div class="divContainer">
+                <label class="sideBarSettings">*유머 채널/베스트 라이브ㅤ</label>
+                <input type="checkbox" id="recentHumorDisplaySwitch" class="switch">
+                <label for="recentHumorDisplaySwitch" class="switch_label">
+                    <span class="onf_btn"></span>
+                </label>
+            </div>
+
+            <div id="sideBarChannelList" class="container"></div>
+            <br><button id="addChannel">채널 추가</button> 
+            <button id="channelSave">저장 (새로고침)</button>
+            <br><br><label class="inform">*현재 채널과 중복될 시 추가로 로드하지 않습니다.<br>나무뉴스는 프로그램 간섭으로 인해 삭제했습니다.</label>
+        </fieldset>
+    </body>
+</html>

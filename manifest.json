@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+
+  "name": "ArcaCustomSideBar",
+  "description": "아카라이브 커스텀 사이드바",
+  "version": "1.0",
+  "permissions": [
+    "storage", "tabs"
+  ],
+
+  "action": {
+    "default_icon": "icons/icon.png",
+    "default_popup": "popupPage/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://arca.live/*"],
+      "js": ["scripts/jquery-3.6.0.js", "contentPage/contentScript.js"]
+    }
+  ]
+}
